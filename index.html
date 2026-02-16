@@ -335,7 +335,7 @@
 
         .section-title {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 2rem;
             position: relative;
             display: inline-block;
@@ -383,18 +383,18 @@
 
         .profile-name {
             font-family: 'Playfair Display', serif;
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
 
         .profile-location {
-            font-size: 1.1rem;
+            font-size: 1rem;
             opacity: 0.8;
             margin-bottom: 0.5rem;
         }
 
         .profile-designation {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: #f59e0b;
             font-weight: 600;
             margin-bottom: 1.5rem;
@@ -452,7 +452,7 @@
         }
 
         .skill-name {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
             display: flex;
@@ -461,7 +461,7 @@
         }
 
         .skill-icon {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         .skill-items {
@@ -533,16 +533,25 @@
         }
 
         .experience-company {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
             color: #f59e0b;
         }
 
         .experience-role {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
+        }
+
+        .experience-location {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .experience-duration {
@@ -583,6 +592,10 @@
             transition: all 0.3s ease;
             position: relative;
             background: linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(139, 92, 246, 0.08));
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
         .project-card:nth-child(2) {
@@ -593,9 +606,28 @@
             background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(14, 165, 233, 0.08));
         }
 
+        .project-card:nth-child(4) {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.08), rgba(139, 92, 246, 0.08));
+        }
+
+        .project-card:nth-child(5) {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(6, 182, 212, 0.08));
+        }
+
         .project-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-hover);
+        }
+
+        .project-category {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background: rgba(245, 158, 11, 0.2);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #f59e0b;
         }
 
         .project-image {
@@ -725,7 +757,7 @@
         }
 
         .project-name {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
             margin-bottom: 1rem;
         }
@@ -840,7 +872,7 @@
         }
 
         .certification-name {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
             position: relative;
@@ -1519,36 +1551,55 @@
                 <h2 class="section-title">Professional Journey</h2>
                 <div class="experience-timeline">
                     <div class="experience-item glass">
-                        <div class="experience-company">Company Name 1</div>
-                        <div class="experience-role">Senior Position Title</div>
-                        <div class="experience-duration">2021 - Present</div>
+                        <div class="experience-company">Concentrix Catalyst</div>
+                        <div class="experience-role">Software Engineer - II</div>
+                        <div class="experience-location">📍 Hyderabad, India</div>
+                        <div class="experience-duration">2024 - Present</div>
                         <ul class="experience-responsibilities">
-                            <li>Led development of key product features that increased user engagement by 40%</li>
-                            <li>Managed a team of 5 developers and mentored junior engineers</li>
-                            <li>Architected scalable microservices infrastructure</li>
-                            <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+                            <li>Developed scalable iOS applications using Swift and SwiftUI</li>
+                            <li>Participated in requirements analysis and task planning</li>
+                            <li>Led the iOS team and conducted code reviews</li>
+                            <li>Handled build, release, and App Store submission processes</li>
+                            <li>Resolved bugs and optimized app performance</li>
                         </ul>
                     </div>
                     <div class="experience-item glass">
-                        <div class="experience-company">Company Name 2</div>
-                        <div class="experience-role">Mid-Level Position Title</div>
+                        <div class="experience-company">OOZOU</div>
+                        <div class="experience-role">Software Engineer - II</div>
+                        <div class="experience-location">📍 Bangkok, Thailand</div>
+                        <div class="experience-duration">2021 - 2024</div>
+                        <ul class="experience-responsibilities">
+                            <li>Developed iOS applications independently using Swift and SwiftUI</li>
+                            <li>Worked as a solo developer on multiple features and modules</li>
+                            <li>Collaborated with team members on design, API integration, and testing</li>
+                            <li>Implemented UI, business logic, and REST API integrations</li>
+                            <li>Fixed bugs and improved app performance and user experience</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item glass">
+                        <div class="experience-company">Accenture Solutions</div>
+                        <div class="experience-role">Application Development Specialist</div>
+                        <div class="experience-location">📍 Bangkok, Thailand</div>
                         <div class="experience-duration">2018 - 2021</div>
                         <ul class="experience-responsibilities">
-                            <li>Developed and maintained full-stack applications</li>
-                            <li>Collaborated with cross-functional teams to deliver projects</li>
-                            <li>Optimized database queries improving performance by 50%</li>
-                            <li>Participated in code reviews and technical documentation</li>
+                            <li>Collaborated with multicultural and global teams on iOS feature development</li>
+                            <li>Worked on Siri-related features and platform integrations</li>
+                            <li>Developed iOS features using Swift and modern iOS frameworks</li>
+                            <li>Partnered with cross-functional teams for design and API integration</li>
+                            <li>Improved app stability, performance, and overall user experience</li>
                         </ul>
                     </div>
                     <div class="experience-item glass">
-                        <div class="experience-company">Company Name 3</div>
-                        <div class="experience-role">Junior Position Title</div>
+                        <div class="experience-company">BiipByte Technologies</div>
+                        <div class="experience-role">Software Developer</div>
+                        <div class="experience-location">📍 Bangalore, India</div>
                         <div class="experience-duration">2016 - 2018</div>
                         <ul class="experience-responsibilities">
-                            <li>Built responsive web applications using modern frameworks</li>
-                            <li>Fixed bugs and implemented new features</li>
-                            <li>Worked closely with designers to implement pixel-perfect UIs</li>
-                            <li>Contributed to open-source projects</li>
+                            <li>Started as an intern and transitioned to a full-time employee within a short period</li>
+                            <li>Developed multiple iOS projects independently as a solo developer</li>
+                            <li>Implemented UI and API integrations using Swift and iOS frameworks</li>
+                            <li>Fixed bugs and enhanced application features</li>
+                            <li>Supported ongoing maintenance and improvements</li>
                         </ul>
                     </div>
                 </div>
@@ -1559,51 +1610,52 @@
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
                     <!-- Project 1 -->
-                    <div class="project-card glass">
+                    <a href="https://apps.apple.com/app/your-app-id-1" target="_blank" class="project-card glass">
                         <div class="project-image">
                             <div class="screenshot-carousel">
                                 <div class="screenshot-container" data-project="1">
                                     <div class="screenshot">
                                         <div class="screenshot-placeholder">📱</div>
-                                        <!-- Replace with: <img src="path/to/screenshot1.png" alt="Screenshot 1"> -->
+                                        <!-- Replace with: <img src="images/project1-screen1.png" alt="Screenshot 1"> -->
                                     </div>
                                     <div class="screenshot">
                                         <div class="screenshot-placeholder">📲</div>
-                                        <!-- Replace with: <img src="path/to/screenshot2.png" alt="Screenshot 2"> -->
+                                        <!-- Replace with: <img src="images/project1-screen2.png" alt="Screenshot 2"> -->
                                     </div>
                                     <div class="screenshot">
                                         <div class="screenshot-placeholder">💬</div>
-                                        <!-- Replace with: <img src="path/to/screenshot3.png" alt="Screenshot 3"> -->
+                                        <!-- Replace with: <img src="images/project1-screen3.png" alt="Screenshot 3"> -->
                                     </div>
                                     <div class="screenshot">
                                         <div class="screenshot-placeholder">🎨</div>
-                                        <!-- Replace with: <img src="path/to/screenshot4.png" alt="Screenshot 4"> -->
+                                        <!-- Replace with: <img src="images/project1-screen4.png" alt="Screenshot 4"> -->
                                     </div>
                                     <div class="screenshot">
                                         <div class="screenshot-placeholder">⚡</div>
-                                        <!-- Replace with: <img src="path/to/screenshot5.png" alt="Screenshot 5"> -->
+                                        <!-- Replace with: <img src="images/project1-screen5.png" alt="Screenshot 5"> -->
                                     </div>
                                 </div>
-                                <div class="carousel-arrow left glass" onclick="scrollCarousel(1, -1)">‹</div>
-                                <div class="carousel-arrow right glass" onclick="scrollCarousel(1, 1)">›</div>
+                                <div class="carousel-arrow left glass" onclick="event.preventDefault(); event.stopPropagation(); scrollCarousel(1, -1);">‹</div>
+                                <div class="carousel-arrow right glass" onclick="event.preventDefault(); event.stopPropagation(); scrollCarousel(1, 1);">›</div>
                             </div>
                             <div class="carousel-nav">
-                                <div class="carousel-dot active" onclick="goToSlide(1, 0)"></div>
-                                <div class="carousel-dot" onclick="goToSlide(1, 1)"></div>
-                                <div class="carousel-dot" onclick="goToSlide(1, 2)"></div>
+                                <div class="carousel-dot active" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(1, 0);"></div>
+                                <div class="carousel-dot" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(1, 1);"></div>
+                                <div class="carousel-dot" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(1, 2);"></div>
                             </div>
                         </div>
                         <div class="project-content">
+                            <span class="project-category">Finance</span>
                             <h3 class="project-name">Project Name 1</h3>
                             <p class="project-description">
                                 Description of your amazing project. What problem it solves, 
-                                technologies used, and the impact it made. Include metrics if possible.
+                                technologies used, and the impact it made. Include key features and technologies.
                             </p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Project 2 -->
-                    <div class="project-card glass">
+                    <a href="https://apps.apple.com/app/your-app-id-2" target="_blank" class="project-card glass">
                         <div class="project-image">
                             <div class="screenshot-carousel">
                                 <div class="screenshot-container" data-project="2">
@@ -1623,26 +1675,27 @@
                                         <div class="screenshot-placeholder">✅</div>
                                     </div>
                                 </div>
-                                <div class="carousel-arrow left glass" onclick="scrollCarousel(2, -1)">‹</div>
-                                <div class="carousel-arrow right glass" onclick="scrollCarousel(2, 1)">›</div>
+                                <div class="carousel-arrow left glass" onclick="event.preventDefault(); event.stopPropagation(); scrollCarousel(2, -1);">‹</div>
+                                <div class="carousel-arrow right glass" onclick="event.preventDefault(); event.stopPropagation(); scrollCarousel(2, 1);">›</div>
                             </div>
                             <div class="carousel-nav">
-                                <div class="carousel-dot active" onclick="goToSlide(2, 0)"></div>
-                                <div class="carousel-dot" onclick="goToSlide(2, 1)"></div>
-                                <div class="carousel-dot" onclick="goToSlide(2, 2)"></div>
+                                <div class="carousel-dot active" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(2, 0);"></div>
+                                <div class="carousel-dot" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(2, 1);"></div>
+                                <div class="carousel-dot" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(2, 2);"></div>
                             </div>
                         </div>
                         <div class="project-content">
+                            <span class="project-category">E-Commerce</span>
                             <h3 class="project-name">Project Name 2</h3>
                             <p class="project-description">
                                 Another impressive project showcasing your skills. Highlight the 
                                 challenges you overcame and the innovative solutions you implemented.
                             </p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Project 3 -->
-                    <div class="project-card glass">
+                    <a href="https://apps.apple.com/app/your-app-id-3" target="_blank" class="project-card glass">
                         <div class="project-image">
                             <div class="screenshot-carousel">
                                 <div class="screenshot-container" data-project="3">
@@ -1662,23 +1715,104 @@
                                         <div class="screenshot-placeholder">🔔</div>
                                     </div>
                                 </div>
-                                <div class="carousel-arrow left glass" onclick="scrollCarousel(3, -1)">‹</div>
-                                <div class="carousel-arrow right glass" onclick="scrollCarousel(3, 1)">›</div>
+                                <div class="carousel-arrow left glass" onclick="event.preventDefault(); event.stopPropagation(); scrollCarousel(3, -1);">‹</div>
+                                <div class="carousel-arrow right glass" onclick="event.preventDefault(); event.stopPropagation(); scrollCarousel(3, 1);">›</div>
                             </div>
                             <div class="carousel-nav">
-                                <div class="carousel-dot active" onclick="goToSlide(3, 0)"></div>
-                                <div class="carousel-dot" onclick="goToSlide(3, 1)"></div>
-                                <div class="carousel-dot" onclick="goToSlide(3, 2)"></div>
+                                <div class="carousel-dot active" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(3, 0);"></div>
+                                <div class="carousel-dot" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(3, 1);"></div>
+                                <div class="carousel-dot" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(3, 2);"></div>
                             </div>
                         </div>
                         <div class="project-content">
+                            <span class="project-category">Health & Fitness</span>
                             <h3 class="project-name">Project Name 3</h3>
                             <p class="project-description">
                                 A third project that demonstrates your versatility and technical 
                                 expertise. Explain the business value and user impact.
                             </p>
                         </div>
-                    </div>
+                    </a>
+
+                    <!-- Project 4 -->
+                    <a href="https://apps.apple.com/app/your-app-id-4" target="_blank" class="project-card glass">
+                        <div class="project-image">
+                            <div class="screenshot-carousel">
+                                <div class="screenshot-container" data-project="4">
+                                    <div class="screenshot">
+                                        <div class="screenshot-placeholder">🎵</div>
+                                    </div>
+                                    <div class="screenshot">
+                                        <div class="screenshot-placeholder">🎧</div>
+                                    </div>
+                                    <div class="screenshot">
+                                        <div class="screenshot-placeholder">📻</div>
+                                    </div>
+                                    <div class="screenshot">
+                                        <div class="screenshot-placeholder">🎤</div>
+                                    </div>
+                                    <div class="screenshot">
+                                        <div class="screenshot-placeholder">🔊</div>
+                                    </div>
+                                </div>
+                                <div class="carousel-arrow left glass" onclick="event.preventDefault(); event.stopPropagation(); scrollCarousel(4, -1);">‹</div>
+                                <div class="carousel-arrow right glass" onclick="event.preventDefault(); event.stopPropagation(); scrollCarousel(4, 1);">›</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(4, 0);"></div>
+                                <div class="carousel-dot" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(4, 1);"></div>
+                                <div class="carousel-dot" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(4, 2);"></div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Entertainment</span>
+                            <h3 class="project-name">Project Name 4</h3>
+                            <p class="project-description">
+                                Fourth project highlighting your ability to build engaging user 
+                                experiences. Describe the key features and technologies used.
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Project 5 -->
+                    <a href="https://apps.apple.com/app/your-app-id-5" target="_blank" class="project-card glass">
+                        <div class="project-image">
+                            <div class="screenshot-carousel">
+                                <div class="screenshot-container" data-project="5">
+                                    <div class="screenshot">
+                                        <div class="screenshot-placeholder">📚</div>
+                                    </div>
+                                    <div class="screenshot">
+                                        <div class="screenshot-placeholder">✏️</div>
+                                    </div>
+                                    <div class="screenshot">
+                                        <div class="screenshot-placeholder">📖</div>
+                                    </div>
+                                    <div class="screenshot">
+                                        <div class="screenshot-placeholder">🎓</div>
+                                    </div>
+                                    <div class="screenshot">
+                                        <div class="screenshot-placeholder">💡</div>
+                                    </div>
+                                </div>
+                                <div class="carousel-arrow left glass" onclick="event.preventDefault(); event.stopPropagation(); scrollCarousel(5, -1);">‹</div>
+                                <div class="carousel-arrow right glass" onclick="event.preventDefault(); event.stopPropagation(); scrollCarousel(5, 1);">›</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(5, 0);"></div>
+                                <div class="carousel-dot" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(5, 1);"></div>
+                                <div class="carousel-dot" onclick="event.preventDefault(); event.stopPropagation(); goToSlide(5, 2);"></div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Education</span>
+                            <h3 class="project-name">Project Name 5</h3>
+                            <p class="project-description">
+                                Fifth project showcasing your comprehensive development skills. 
+                                Explain how it helps users and the technical architecture.
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </section>
 
@@ -1823,7 +1957,9 @@
         const carouselStates = {
             1: { currentSlide: 0, totalSlides: 3 },
             2: { currentSlide: 0, totalSlides: 3 },
-            3: { currentSlide: 0, totalSlides: 3 }
+            3: { currentSlide: 0, totalSlides: 3 },
+            4: { currentSlide: 0, totalSlides: 3 },
+            5: { currentSlide: 0, totalSlides: 3 }
         };
 
         function scrollCarousel(projectId, direction) {
